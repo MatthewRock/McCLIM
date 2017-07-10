@@ -312,10 +312,14 @@ by the number of variables in VARS."
 
 ;;; Convenience macros
 
-(define-modify-macro maxf (&rest args) max)
-(define-modify-macro minf (&rest args) min)
-(define-modify-macro nconcf (&rest args) nconc)
-(define-modify-macro orf (&rest args) or)
+(define-modify-macro maxf (&rest args)
+  max "Set the place(first argument) to maximum of all the arguments(including the first one)")
+(define-modify-macro minf (&rest args)
+  min "Set the place(first argument) to minimum of all the arguments(including the first one)")
+(define-modify-macro nconcf (&rest args)
+  nconc "Set the place(first argument) to minimum of all the arguments(including the first one)")
+(define-modify-macro orf (&rest args)
+  or "Set the place(first argument) to the first non-nil argument unless the place is already non-nil.")
 
 
 ;;; Move this early so it can be used in presentations.lisp, which
