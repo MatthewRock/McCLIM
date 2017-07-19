@@ -797,6 +797,8 @@ the associated sheet can be determined."
 (defmethod map-over-output-records-1
     (function (record standard-sequence-output-record) function-args)
   "Applies FUNCTION to all children in the order they were added."
+  (log4cl:log-info "Processing standard-sequence!")
+  (log4cl:log-info "Children:" (output-record-children record))
   (if function-args
       (loop with children = (output-record-children record)
 	    for child across children

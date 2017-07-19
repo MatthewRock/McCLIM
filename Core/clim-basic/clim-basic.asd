@@ -1,6 +1,6 @@
 
 (defsystem #:clim-basic
-  :depends-on (#:clim-lisp #:spatial-trees (:version "flexichain" "1.5.1") #:bordeaux-threads #:trivial-garbage #:trivial-features)
+  :depends-on (#:log4cl #:clim-lisp #:spatial-trees (:version "flexichain" "1.5.1") #:bordeaux-threads #:trivial-garbage #:trivial-features)
   :components
   ((:file "setf-star")
    (:file "decls" :depends-on ("setf-star"))

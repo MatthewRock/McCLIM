@@ -55,7 +55,7 @@ Daniel Kochmański"
 
 CLIM (Common Lisp Interface Manager) is an advanced graphical user
 interface management system."
-  :depends-on (#:mcclim/looks #:mcclim/extensions))
+  :depends-on (#:mcclim/looks #:mcclim/extensions #:log4cl))
 
 ;;; A system that loads the appropriate backend for the current
 ;;; platform.

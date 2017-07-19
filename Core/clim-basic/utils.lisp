@@ -475,6 +475,7 @@ in KEYWORDS removed."
   
 (defun gen-invoke-trampoline (fun to-bind to-pass body)
   "Macro helper function, generates the LABELS / INVOKE-WITH-... ideom."
+  (log4cl:log-info "gen-invoke-trampoline called!")
   (let ((cont (gensym ".CONT.")))
     `(labels ((,cont (,@to-bind)
                ,(declare-ignorable-form to-bind)

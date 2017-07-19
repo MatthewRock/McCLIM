@@ -1,0 +1,11 @@
+
+* TODO Pane is not redrawn when resizing window(redraws on keypress(e.g. escape) though).
+
+* TODO Text does not fit column, but the whole pane.
+
+** Search in Core/clim-core/table-formatting.lisp
+   Look at functions: 
+   - formatting-table (original called macro)
+   - invoke-formatting-table (one that calls ...)
+   - adjust-table-cells (one that does the adjusting).
+   - maybe adjust-multiple-columns should be used?
